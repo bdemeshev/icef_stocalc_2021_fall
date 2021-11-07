@@ -153,10 +153,11 @@ Find $\P(Y=y|X)$, $\E(Y|X)$, $\Var(Y|X)$, $\E(Y)$, $\Var(Y)$.
 
 \begin{enumerate}
   \item Find $\E(Y|X)$, $\Var(Y|X)$, $\E(XY|X)$ and $\Var(XY|X)$.
-  \item Using standard normal cumulative distribution function find $\P(YX > 2019 | X)$.
+  \item Using standard normal cumulative distribution function find $\P(YX > 2021 | X)$.
 \end{enumerate}
 
 \item Starting from the properties of conditional expected value prove the following properties
+of variance:
 
 \begin{enumerate}
   \item $\Var(h(X)Y + g(X)|X) = h^2(X)\Var(Y|X)$;
@@ -183,10 +184,11 @@ Deadline: 29 December 2021, 21:00
 
 
 \item Assume all expected values are finite, $(X_t)$ and $(Y_t)$ are martingales with respect to the filtration $(\cF_t)$.
-Prove that the following processes are martingales or provide a counter-example.
+Prove that the following processes are martingales or provide a counter-example. 
+Assume that the expected value $\E(X_t \cdot Y_t)$ is finite for all $t$. 
 
 \begin{enumerate}
-  \item $M_t = X_t + Y_t$;
+  \item $M_t = X_t + 2Y_t$;
   \item $K_t = X_t \cdot Y_t$.
 \end{enumerate}
 
@@ -195,7 +197,7 @@ $\P(Z_n = 1) = p$ and $\P(Z_n = -1) = 1-p$. Consider the cumulative sum process,
 
 \begin{enumerate}
   \item For which value of $p$ the process $2^{S_n}$ will be a martingale?
-  \item Let $p=0.4$. 
+  \item Let $p=0.3$. 
   If possible find the constants $\alpha$ and $\beta$ such that $Y_n = S_n^2 + \alpha S_n + \beta n$ is a martingale.
 \end{enumerate}
 
@@ -205,12 +207,12 @@ Check whether the following random variables are stopping times.
 \begin{enumerate}
   \item $\tau_3 = \min\{\tau_1, \tau_2\}$;
   \item $\tau_4 = \max\{\tau_1, \tau_2\}$;
-  \item $\tau_5 = \tau_1 + \tau_2$;
-  \item $\tau_6 = \tau_1 - 1$.
+  \item $\tau_5 = \tau_1 + 2\tau_2$;
+  \item $\tau_6 = \tau_1 - 2$.
 \end{enumerate}
 
 
-\item Consider any random variable $Z$ and filtration $(\cF_t)$. 
+\item Consider a random variable $Z$ with finite expected value and filtration $(\cF_t)$. 
 Check whether $M_t = \E(Z \mid \cF_t)$ is a martingale.
 
 
@@ -266,11 +268,11 @@ Derive the current price of two European type assets, $X_0$ and $Y_0$.
 
 Future payoffs are given by:
 \begin{enumerate}
-  \item $X_T = (S_T - K)^2$ where $T$ and $K$ are fixed in the contract.
-  \item $Y_T = S_T^{-1}$ where $T$ is fixed in the contract. 
+  \item $X_T = (S_T - K)^3$ where $T$ and $K$ are fixed in the contract.
+  \item $Y_T = S_T^{-2}$ where $T$ is fixed in the contract. 
 \end{enumerate}
 
-\item Let $Y_t = W_t + 3t$. The moment $\tau$ is the first moment when Wiener process hits $10$. 
+\item Let $Y_t = W_t + 4t$. The moment $\tau$ is the first moment when Wiener process hits $10$. 
 \begin{enumerate}
   \item Let $\alpha$ be a constant. Find the function $f(t)$ such that $M_t = f(t)\exp(\alpha Y_t)$ is a martingale.
   \item Using Doob's theorem find $\E(\exp(-s \tau))$ for arbitrary constant $s$. 
